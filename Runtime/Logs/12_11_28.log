@@ -1,0 +1,480 @@
+[ 2012-11-28T05:18:40+08:00 ] 127.0.0.1 /activity/index.php/Detail/showDetail2/id/200000001
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.029780s ]
+INFO: [ route_check ] --END-- [ RunTime:0.033068s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.030015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010628s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.109697s ]
+SQL: SELECT * FROM `activity` WHERE ( `number` = 200000001 ) LIMIT 1   [ RunTime:0.016915s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.420285s ]
+INFO: [ view_template ] --END-- [ RunTime:0.052241s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.472868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124566s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.597594s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.613830s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.631356s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.634014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.046424s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.644370s ]
+INFO: [ view_end ] --END-- [ RunTime:0.016001s ]
+
+[ 2012-11-28T05:18:44+08:00 ] 127.0.0.1 /activity/index.php/Detail/showDetail2/id/200000002
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001132s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.003764s ]
+SQL: SELECT * FROM `activity` WHERE ( `number` = 200000002 ) LIMIT 1   [ RunTime:0.000357s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027231s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001207s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.028531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009688s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.038282s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.038941s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.039569s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.040050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002568s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.040964s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2012-11-28T05:18:49+08:00 ] 127.0.0.1 /activity/index.php/Detail/showDetail2/id/20000000
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000883s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `activity` [ RunTime:0.003617s ]
+SQL: SELECT * FROM `activity` WHERE ( `number` = 20000000 ) LIMIT 1   [ RunTime:0.000356s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.017606s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.018661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076907s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.095718s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.097409s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.098926s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.099995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005888s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.101839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002057s ]
+
+[ 2012-11-28T05:28:52+08:00 ] 127.0.0.1 /activity/index.php/Detail/showAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.003310s ]
+SQL: SELECT * FROM `attention`  [ RunTime:0.000336s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.030043s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002070s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.032209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058509s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.091014s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.094116s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.097155s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.099897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012742s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.104140s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004326s ]
+
+[ 2012-11-28T05:29:25+08:00 ] 127.0.0.1 /activity/index.php/Detail/showAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002079s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002250s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.003900s ]
+SQL: SELECT * FROM `attention`  [ RunTime:0.000337s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023828s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001829s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.025754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012561s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.038381s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.039331s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.040302s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.041130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003871s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.042369s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2012-11-28T05:35:48+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001230s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.087287s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.104338s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004101s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.108693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029529s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.138436s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.140640s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.142898s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.144687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008578s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.147109s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2012-11-28T05:37:57+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001233s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.018240s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034876s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001367s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.036344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011042s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.047469s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048266s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.049161s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003357s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050953s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2012-11-28T05:38:52+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001233s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.044162s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.068861s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003371s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.072486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028760s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.101295s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.102433s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.103595s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.104542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004679s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.106165s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001741s ]
+
+[ 2012-11-28T05:41:11+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001285s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001411s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.004487s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.021398s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001318s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.022811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010225s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.033112s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.034011s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.034851s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.035550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003424s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.036666s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2012-11-28T05:42:45+08:00 ] 127.0.0.1 /activity/index.php/Form/add
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001235s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.004703s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001299s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.006086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010181s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.016343s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.017117s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.017906s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.018553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003287s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.019752s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2012-11-28T05:47:58+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001165s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001365s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.004060s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029446s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001276s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010629s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041521s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042271s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.043021s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.043618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003121s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.044803s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2012-11-28T05:48:52+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001220s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000954s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.004368s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001388s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.005840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010277s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.016189s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.016916s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.017659s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.018247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002952s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.019255s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001014s ]
+
+[ 2012-11-28T05:49:01+08:00 ] 127.0.0.1 /activity/index.php/Detail/insertAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001128s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001250s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.003623s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027790s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001224s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.029106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010921s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.040104s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.040854s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.041608s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003072s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.043310s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001130s ]
+
+[ 2012-11-28T05:49:53+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001254s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.004898s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001489s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.006484s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011629s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.018188s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.019023s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.019841s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.020491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003332s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.021649s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2012-11-28T05:49:56+08:00 ] 127.0.0.1 /activity/index.php/Detail/insertAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000941s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.048986s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.074732s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003347s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.078261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022164s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.100594s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.102428s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.104098s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.105432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007104s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.107792s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2012-11-28T05:50:02+08:00 ] 127.0.0.1 /activity/index.php/Detail/insertAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001081s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001197s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.003897s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027704s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001148s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.028943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010609s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.039643s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.040479s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.041386s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003394s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.043167s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2012-11-28T05:50:20+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.003895s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001217s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.005194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009552s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.014820s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.015563s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.016305s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.016893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002976s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.017921s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2012-11-28T05:50:22+08:00 ] 127.0.0.1 /activity/index.php/Detail/insertAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000982s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.050057s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.075830s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003339s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.079453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022151s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.101604s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.102471s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.103321s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.104033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003475s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.105212s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001199s ]
+
+[ 2012-11-28T05:51:14+08:00 ] 127.0.0.1 /activity/index.php/Detail/addAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002117s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002370s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.007275s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002039s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.009434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015821s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.025342s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.026505s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.027823s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.028801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004920s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.030454s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001368s ]
+
+[ 2012-11-28T05:51:24+08:00 ] 127.0.0.1 /activity/index.php/Detail/insertAttention
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001096s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `attention` [ RunTime:0.003725s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.028180s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001204s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.029475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010533s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.040086s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.040820s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.041564s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003029s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.043242s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001146s ]
+

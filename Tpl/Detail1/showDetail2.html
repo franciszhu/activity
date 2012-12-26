@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>某活动</title>
+</head>
+<body>
+<table>
+<tr>
+	<td>{$data.act_name}</td>
+</tr>
+<tr>
+	<td>时间：</td>
+	<td>{$startYear}年{$startMonth}月{$startDay}日{$startHour}:{$startMinute} </td>
+	<td>至</td>
+	<td>{$endYear}年{$endMonth}月{$endDay}日{$endHour}:{$endMinute}</td>
+</tr>
+<tr>
+	<td>地点：</td>
+	<td>{$data.place}</td>
+</tr>
+<tr>
+	<td>费用：</td>
+	<td>{$data.cost}</td>
+</tr>
+<tr>
+	<td>来自于：</td>
+	<td>{$belongName.name}</td>
+</tr>
+<tr>
+	<td>{$attentionCount}人关注</td>
+	<td>{$participateCount}人参加</td>
+</tr>
+<tr>
+	<td>活动详情：</td>
+</tr>
+<tr>
+	<td>{$data.intro}</td>
+</tr>
+</table>
+</body>
+</html>
