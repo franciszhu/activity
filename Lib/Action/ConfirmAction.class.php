@@ -46,36 +46,36 @@ class ConfirmAction extends Action {
 			$this->error('请正确输入开始日期');
 		}
 		
-		if(strlen($startDay) > 2 || strlen($startDay) < 1 || $this->ifNumeric($startMonth)){
+		if(strlen($startDay) > 2 || strlen($startDay) < 1 || $this->ifNumeric($startDay)){
 			$this->error('请正确输入开始日期');
 		}
 		
-		if(strlen($startDay) > 2 || strlen($startDay) < 1 || $this->ifNumeric($startMonth)){
+		if(strlen($startHour) > 2 || strlen($startHour) < 1 || $this->ifNumeric($startHour)){
 			$this->error('请正确输入开始时间');
 		}
 		
-		if(strlen($startMinute) > 2 || strlen($startMinute) < 1 || $this->ifNumeric($startMonth)){
+		if(strlen($startMinute) > 2 || strlen($startMinute) < 1 || $this->ifNumeric($startMinute)){
 			$this->error('请正确输入开始时间');
 		}
 		
-		if(strlen($endYear) > 4 || strlen($endYear) < 1){
+		if(strlen($endYear) > 4 || strlen($endYear) < 1 || $this->ifNumeric($endYear)){
 			// 			echo $startTime;
 			$this->error('请正确输入结束日期');
 		}
 		
-		if(strlen($endMonth) > 2 || strlen($endMonth) < 1){
+		if(strlen($endMonth) > 2 || strlen($endMonth) < 1 || $this->ifNumeric($endMonth)){
 			$this->error('请正确输入结束日期');
 		}
 		
-		if(strlen($endDay) > 2 || strlen($endDay) < 1){
+		if(strlen($endDay) > 2 || strlen($endDay) < 1 || $this->ifNumeric($endDay)){
 			$this->error('请正确输入结束日期');
 		}
 		
-		if(strlen($endHour) > 2 || strlen($endHour) < 1){
+		if(strlen($endHour) > 2 || strlen($endHour) < 1 || $this->ifNumeric($endHour)){
 			$this->error('请正确输入结束时间');
 		}
 		
-		if(strlen($endMinute) > 2 || strlen($endMinute) < 1){
+		if(strlen($endMinute) > 2 || strlen($endMinute) < 1 || $this->ifNumeric($endMinute)){
 			$this->error('请正确输入结束时间');
 		}
 		
