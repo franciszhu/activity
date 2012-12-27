@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="/Activity/Tpl/Search/Search.css" type="text/css" rel="stylesheet"/>
+<link href="/activity/Tpl/MyActivity/MyActivity.css" type="text/css" rel="stylesheet"/>
 <title>无标题文档</title>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="float_index.js"></script>
@@ -40,66 +40,25 @@
       <div class="index-content-left">
           <div class="index-nav">
               <div class="index1">
-                  <a href="/">演出/晚会</a>
+                  <a href="/">发起活动</a>
               </div>
               <div class="index2">
-                  <a href="/">体育竞技</a>
+                  <a href="/">我发起的活动</a>
               </div>
               <div class="index1">
-                  <a href="/">讲座沙龙</a>
+                  <a href="/">我参加的活动</a>
               </div>
               <div class="index1">
-                  <a href="/">旅行户外</a>
-              </div>
-              <div class="index1">
-                  <a href="/">生活聚会</a>
-              </div>
-              <div class="index1">
-                  <a href="/">福利活动</a>
+                  <a href="/">我喜欢的活动</a>
               </div>
           </div>
       </div>
       <div class="content-right">
           <div class="content-right-left">
-              <div class="activity-attibute">
-              	<p>和“<span id="search-key">{$key_words}</span>”有关的活动</p>
-              </div>
+        
               <div class="activity-info-body">
               	<?php
-for ($i=$activityMount-1; $i>=0; $i--){
-			
-			$startYear=substr($activityInfoArray[$i]["time_start"],0,4);
-			$startMonth=substr($activityInfoArray[$i]["time_start"],4,2);
-			$startDay=substr($activityInfoArray[$i]["time_start"],6,2);
-			$startHour=substr($activityInfoArray[$i]["time_start"],8,2);
-			$startMinute=substr($activityInfoArray[$i]["time_start"],10,2);
-			$startTime = $startYear.'年'.$startMonth.'月'.$startDay.'日'.$startHour.':'.$startMinute;	
-			
-			$endYear=substr($activityInfoArray[$i]["time_end"],0,4);
-			$endMonth=substr($activityInfoArray[$i]["time_end"],4,2);
-			$endDay=substr($activityInfoArray[$i]["time_end"],6,2);
-			$endHour=substr($activityInfoArray[$i]["time_end"],8,2);
-			$endMinute=substr($activityInfoArray[$i]["time_end"],10,2);
-			$endTime = $endYear.'年'.$endMonth.'月'.$endDay.'日'.$endHour.':'.$endMinute;
-			
-			$activityTime = $startTime.' 至 '.$endTime;
-			
-			//发起人
-			$Origin = M('User_info');
-			$belongName = $Origin->find($activityInfoArray[$i]['belong_to']);
-			// 			echo $data['belong_to'];
-			
-			//关注人数
-			$Attention = M('Attention');
-			$attentionCount = $Attention->where('act_num = '.$activityInfoArray[$i]['number'])->count();
-			// 			echo 'act_num = '.$id;
-			
-			//参加人数
-			$Participate = M('Participate');
-			$participateCount = $Participate->where('act_num = '.$activityInfoArray[$i]['number'])->count();
-			
-			
-			echo '<div class="activity-info-simple">
+for ($i=$activityMount-1; $i>=0; $i--){ $startYear=substr($activityInfoArray[$i]["time_start"],0,4); $startMonth=substr($activityInfoArray[$i]["time_start"],4,2); $startDay=substr($activityInfoArray[$i]["time_start"],6,2); $startHour=substr($activityInfoArray[$i]["time_start"],8,2); $startMinute=substr($activityInfoArray[$i]["time_start"],10,2); $startTime = $startYear.'年'.$startMonth.'月'.$startDay.'日'.$startHour.':'.$startMinute; $endYear=substr($activityInfoArray[$i]["time_end"],0,4); $endMonth=substr($activityInfoArray[$i]["time_end"],4,2); $endDay=substr($activityInfoArray[$i]["time_end"],6,2); $endHour=substr($activityInfoArray[$i]["time_end"],8,2); $endMinute=substr($activityInfoArray[$i]["time_end"],10,2); $endTime = $endYear.'年'.$endMonth.'月'.$endDay.'日'.$endHour.':'.$endMinute; $activityTime = $startTime.' 至 '.$endTime; $Origin = M('User_info'); $belongName = $Origin->find($activityInfoArray[$i]['belong_to']); $Attention = M('Attention'); $attentionCount = $Attention->where('act_num = '.$activityInfoArray[$i]['number'])->count(); $Participate = M('Participate'); $participateCount = $Participate->where('act_num = '.$activityInfoArray[$i]['number'])->count(); echo '<div class="activity-info-simple">
                 	<div class="activity-info-simple-photo">
                     	<img alt="活动缩略图片" src="'.$activityInfoArray[$i]['photo'].'">
                     </div>
@@ -121,32 +80,11 @@ for ($i=$activityMount-1; $i>=0; $i--){
                         <span>'.$participateCount.'人<a href="/activity/index.php/Participate/addParticipate/actNumber/'.$activityInfoArray[$i]['number'].'">参加</a></span></p>
                         </div>
                     </div>
-                </div>';
-		}
-              	?>
-                 <div class="activity-info-bottom">
+                </div>'; } ?>
+                <div class="activity-info-bottom">
                 	<div class="next-page">
                 	<?php
-		if ($pageCount == 1) {
-			;
-		}else{
-			if ($page != 1) {
-				echo '<span><a href="'.($page-1).'">上一页</a></span>&nbsp;&nbsp;';
-			}
-			for ($i=1; $i <= $pageCount; $i++){
-				if ($i == $page) {
-					echo '<span>'.($i).'</span>&nbsp;&nbsp;';
-				}else {
-				echo '<span><a href="'.$i.'">'.($i).'</a></span>&nbsp;&nbsp;';
-				}
-			}
-			if ($page == $pageCount) {
-				//do nothing 
-			}else{
-				echo '<a href="'.($page+1).'">下一页</a></span>';
-			}
-		}
-                	?>
+ if ($pageCount == 1) { ; }else{ if ($page != 1) { echo '<span><a href="'.($page-1).'">上一页</a></span>&nbsp;&nbsp;'; } for ($i=1; $i <= $pageCount; $i++){ if ($i == $page) { echo '<span>'.($i).'</span>&nbsp;&nbsp;'; }else { echo '<span><a href="'.$i.'">'.($i).'</a></span>&nbsp;&nbsp;'; } } if ($page == $pageCount) { }else{ echo '<a href="'.($page+1).'">下一页</a></span>'; } } ?>
                 	</div>
                 </div>
               </div>

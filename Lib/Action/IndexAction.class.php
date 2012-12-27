@@ -7,6 +7,10 @@ class IndexAction extends Action {
 //     $this->display();
 //    $Data = M('Activity');
 //    $this->data = $Data->select();
-    $this->display('../login/login');
+    if (strlen($_SESSION['UserNumber']) > 0) {
+   		$this->redirect('activity/index.php/Mainpage/listNewActivity');
+   	}else {
+   		$this->display('../Login/login');
+   	}
     }
 }

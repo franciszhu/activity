@@ -10,7 +10,7 @@
 <body>
   <div class="top-bar">
   	<a href="/"><img alt="活动记" class="top-logo" src="http://cdn.chanyouji.cn/assets/top-logo-57dbfef8097d9d3bd900eef5bd23b123.png" /></a>
-    <div class="login" id="top-bar-login"> <a href="//login's url">登录</a> </div>
+    <div class="login" id="top-bar-login"> <a href="/activity/index.php/Logout/logout">登出</a> </div>
     <div class="index-page" id="page-body">
       <div class="index-cover" id="index-cover">
      	 <img class="index-banner" src="http://m.chanyouji.cn/index-cover/14570-429968.jpg">
@@ -22,10 +22,9 @@
       <div class="xkhd_dh_xg_1_left">
         <ul class="clearfix">
           <li><a href="/activity/index.php/Mainpage/listNewActivity" class="over">首页</a></li>
-          <li><a href="http://hd.xunkoo.com/activityList/0/0" class="">同城活动</a></li>
-          <li><a href="http://hd.xunkoo.com/activityList/0/1" class="">线上活动</a></li>
-          <li><a href="http://hd.xunkoo.com/activityList/0/3" class="">福利活动</a></li>
-          <li><a href="">本校活动</a></li>
+          <li><a href="/activity/index.php/NewActivity/launchActivity" class="">发起活动</a></li>
+          <li><a href="/activity/index.php/MyActivity/myActivity" class="">我的活动</a></li>
+          <li><a href="" class="">我的信息</a></li>
         </ul>
       </div>
       <div class="xkhd_dh_xg_1_right">
@@ -83,8 +82,8 @@
                         <p>来自于 个人：<a href="/">{$belongName.name}</a></p>
                         </div>
                         <div class="activity-info-attention">
-                        <p><span>{$attentionCount}人关注</span>
-                        <span>{$participateCount}人参加</span></p>
+                        <p><span>{$attentionCount}人<a href="/activity/index.php/Attention/addAttention/actNumber/{$data.number}">关注</a></span>
+                        <span>{$participateCount}人<a href="/activity/index.php/Participate/addParticipate/actNumber/{$data.number}">参加</a></span></p>
                         </div>
                     </div>
                 </div>

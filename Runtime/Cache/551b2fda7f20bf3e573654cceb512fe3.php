@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,7 +10,7 @@
 <body>
   <div class="top-bar">
   	<a href="/"><img alt="活动记" class="top-logo" src="http://cdn.chanyouji.cn/assets/top-logo-57dbfef8097d9d3bd900eef5bd23b123.png" /></a>
-    <div class="login" id="top-bar-login"> <a href="/activity/index.php/Logout/logout">登出</a> </div>
+    <div class="login" id="top-bar-login"> <a href="//login's url">登录</a> </div>
     <div class="index-page" id="page-body">
       <div class="index-cover" id="index-cover">
      	 <img class="index-banner" src="http://m.chanyouji.cn/index-cover/14570-429968.jpg">
@@ -23,14 +23,14 @@
         <ul class="clearfix">
           <li><a href="/activity/index.php/Mainpage/listNewActivity" class="over">首页</a></li>
           <li><a href="/activity/index.php/NewActivity/launchActivity" class="">发起活动</a></li>
-          <li><a href="/activity/index.php/MyActivity/myActivity" class="">我的活动</a></li>
+          <li><a href="" class="">我的活动</a></li>
           <li><a href="" class="">我的信息</a></li>
         </ul>
       </div>
       <div class="xkhd_dh_xg_1_right">
         <div class="xkhd_dh_xg_1_right_1">
-          <form class="key-words-search" action="/activity/index.php/KeySearch/keySearch" method="POST">
-            <input name="key_words" type="text" value="输入活动标题" class="xkhd_dh_xg_1_right_2">
+          <form class="key-words-search" action="/" method="get">
+            <input name="" type="text" value="输入活动标题" class="xkhd_dh_xg_1_right_2">
             <input name="submit" type="submit" value="确认">
           </form>
         </div>
@@ -104,40 +104,7 @@
               </div>
               <div class="activity-info-body">
               	<?php
-for ($i=$activityMount-1; $i>=0; $i--){
-			
-			$startYear=substr($activityInfoArray[$i]["time_start"],0,4);
-			$startMonth=substr($activityInfoArray[$i]["time_start"],4,2);
-			$startDay=substr($activityInfoArray[$i]["time_start"],6,2);
-			$startHour=substr($activityInfoArray[$i]["time_start"],8,2);
-			$startMinute=substr($activityInfoArray[$i]["time_start"],10,2);
-			$startTime = $startYear.'年'.$startMonth.'月'.$startDay.'日'.$startHour.':'.$startMinute;	
-			
-			$endYear=substr($activityInfoArray[$i]["time_end"],0,4);
-			$endMonth=substr($activityInfoArray[$i]["time_end"],4,2);
-			$endDay=substr($activityInfoArray[$i]["time_end"],6,2);
-			$endHour=substr($activityInfoArray[$i]["time_end"],8,2);
-			$endMinute=substr($activityInfoArray[$i]["time_end"],10,2);
-			$endTime = $endYear.'年'.$endMonth.'月'.$endDay.'日'.$endHour.':'.$endMinute;
-			
-			$activityTime = $startTime.' 至 '.$endTime;
-			
-			//发起人
-			$Origin = M('User_info');
-			$belongName = $Origin->find($activityInfoArray[$i]['belong_to']);
-			// 			echo $data['belong_to'];
-			
-			//关注人数
-			$Attention = M('Attention');
-			$attentionCount = $Attention->where('act_num = '.$activityInfoArray[$i]['number'])->count();
-			// 			echo 'act_num = '.$id;
-			
-			//参加人数
-			$Participate = M('Participate');
-			$participateCount = $Participate->where('act_num = '.$activityInfoArray[$i]['number'])->count();
-			
-			
-			echo '<div class="activity-info-simple">
+for ($i=$activityMount-1; $i>=0; $i--){ $startYear=substr($activityInfoArray[$i]["time_start"],0,4); $startMonth=substr($activityInfoArray[$i]["time_start"],4,2); $startDay=substr($activityInfoArray[$i]["time_start"],6,2); $startHour=substr($activityInfoArray[$i]["time_start"],8,2); $startMinute=substr($activityInfoArray[$i]["time_start"],10,2); $startTime = $startYear.'年'.$startMonth.'月'.$startDay.'日'.$startHour.':'.$startMinute; $endYear=substr($activityInfoArray[$i]["time_end"],0,4); $endMonth=substr($activityInfoArray[$i]["time_end"],4,2); $endDay=substr($activityInfoArray[$i]["time_end"],6,2); $endHour=substr($activityInfoArray[$i]["time_end"],8,2); $endMinute=substr($activityInfoArray[$i]["time_end"],10,2); $endTime = $endYear.'年'.$endMonth.'月'.$endDay.'日'.$endHour.':'.$endMinute; $activityTime = $startTime.' 至 '.$endTime; $Origin = M('User_info'); $belongName = $Origin->find($activityInfoArray[$i]['belong_to']); $Attention = M('Attention'); $attentionCount = $Attention->where('act_num = '.$activityInfoArray[$i]['number'])->count(); $Participate = M('Participate'); $participateCount = $Participate->where('act_num = '.$activityInfoArray[$i]['number'])->count(); echo '<div class="activity-info-simple">
                 	<div class="activity-info-simple-photo">
                     	<img alt="活动缩略图片" src="'.$activityInfoArray[$i]['photo'].'">
                     </div>
@@ -159,32 +126,11 @@ for ($i=$activityMount-1; $i>=0; $i--){
                         <span>'.$participateCount.'人<a href="/activity/index.php/Participate/addParticipate/actNumber/'.$activityInfoArray[$i]['number'].'">参加</a></span></p>
                         </div>
                     </div>
-                </div>';
-		}
-              	?>
+                </div>'; } ?>
                 <div class="activity-info-bottom">
                 	<div class="next-page">
                 	<?php
-		if ($pageCount == 1) {
-			;
-		}else{
-			if ($page != 1) {
-				echo '<span><a href="'.($page-1).'">上一页</a></span>&nbsp;&nbsp;';
-			}
-			for ($i=1; $i <= $pageCount; $i++){
-				if ($i == $page) {
-					echo '<span>'.($i).'</span>&nbsp;&nbsp;';
-				}else {
-				echo '<span><a href="'.$i.'">'.($i).'</a></span>&nbsp;&nbsp;';
-				}
-			}
-			if ($page == $pageCount) {
-				//do nothing 
-			}else{
-				echo '<a href="'.($page+1).'">下一页</a></span>';
-			}
-		}
-                	?>
+ if ($pageCount == 1) { ; }else{ if ($page != 1) { echo '<span><a href="'.($page-1).'">上一页</a></span>&nbsp;&nbsp;'; } for ($i=1; $i <= $pageCount; $i++){ if ($i == $page) { echo '<span>'.($i).'</span>&nbsp;&nbsp;'; }else { echo '<span><a href="'.$i.'">'.($i).'</a></span>&nbsp;&nbsp;'; } } if ($page == $pageCount) { }else{ echo '<a href="'.($page+1).'">下一页</a></span>'; } } ?>
                 	</div>
                 </div>
               </div>
