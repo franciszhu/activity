@@ -33,12 +33,14 @@ top: 56px;
 	margin-bottom: 18px;	
 }
 .inputarea-submit {
-	float:right;	
+	right: 27px;
+	top: 54px;
+	position: absolute;	
 }
 .inputarea-logon {
 position: absolute;
-bottom: 35px;
-right: 30px;
+bottom: 46px;
+right: 36px;
 }
 #all {
 	width:950px;
@@ -49,7 +51,7 @@ right: 30px;
 	position:absolute;
 	left: 90px;
 	top: -158px;
-	width:500px;
+	width:430px;
 	background:#000;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;

@@ -21,7 +21,7 @@ class LoginAction extends Action{
 		if ($userResult[0]['id'] == $userId && $userResult[0]['passwd'] == $password)
 		{
 			$_SESSION['UserNumber'] = $userResult[0]['number'];
-			$this->success('登陆成功','../Detail/showDetail2/id/2000000001'); //要改URL到主页
+			$this->success('登陆成功','../Mainpage/listNewActivity'); //要改URL到主页
 		}
 		else {
 			$this->error('没有该用户或者密码错误！');

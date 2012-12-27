@@ -9,7 +9,7 @@
 <body>
 <div id="all">
 	<div id="shuoming">
-        <form action="Register/register" method="post">
+        <form action="index.php/Login/login" method="post">
         	<div style="float:left">
                 <div class="inputarea">
                     <div class="inputarea-id">
@@ -25,7 +25,10 @@
                 </div>
             </div>
             <div class="inputarea-submit">
-                	<input type="submit" name="submit" value="戳我注册"/>
+                	<input type="submit" name="submit" value="戳我登入"/>
+            </div>
+            <div class="inputarea-logon">
+                	<a href="index.php/Register/regist">点击我注册</a>
             </div>
         </form>
 	</div>

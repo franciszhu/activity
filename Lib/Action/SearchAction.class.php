@@ -22,46 +22,204 @@ class SearchAction extends Action{
 		$this->display('search');
 	}
 
-	public function show(){
-		$User = M('activity',null);
-		$list = $User->table('activity,activity_attri')->where('activity_attri.number = activity.number and activity_attri.show = 1')->select();
-		$this->assign('list',$list);
-		$this->display('search');
+	public function show($page=0){
+		
+		if($page == 0){
+			$this->redirect('/Search/show/page/1');
+		}
+		
+		$activityInfo = M('activity');
+		//分页内容
+		//$activityCount = count($activityInfo->select());
+		$activityMountPerPage = 3;
+		$activityMount = $activityMountPerPage;
+		$activityCountTotal = count($activityInfo
+								->table('activity,activity_attri')
+								->where('activity_attri.number = activity.number AND activity_attri.show = 1')
+								->select());
+		$activityCount = $activityCountTotal;
+		$this->assign('page',$page);
+		
+		$activityOffset = $activityCount - $activityMount * $page;
+		if ($activityOffset < 0) {
+			$activityOffset = 0;
+			$activityMount = $activityMount - ($activityMountPerPage * $page - $activityCount);
+		}
+		$activityInfoArray = $activityInfo->limit($activityOffset,$activityMount)
+										->table('activity,activity_attri')
+										->where('activity_attri.number = activity.number AND activity_attri.show = 1')
+										->select();
+		$activityCount = count($activityInfoArray);	
+		$this->assign('pageCount', ceil($activityCountTotal/$activityMountPerPage));
+		$this->assign('activityInfoArray',$activityInfoArray);
+		$this->assign('activityMount', $activityMount);		
+		$this->display('../Display/Display');
 	}
 	
-	public function sports(){
-		$User = M('activity',null);
-		$list = $User->table('activity,activity_attri')->where('activity_attri.number = activity.number and activity_attri.sports = 1')->select();
-		$this->assign('list',$list);
-		$this->display('search');
+	public function sports($page=0){
+		if($page == 0){
+			$this->redirect('/Search/sports/page/1');
+		}
+		
+		$activityInfo = M('activity');
+		//分页内容
+		//$activityCount = count($activityInfo->select());
+		$activityMountPerPage = 3;
+		$activityMount = $activityMountPerPage;
+		$activityCountTotal = count($activityInfo
+				->table('activity,activity_attri')
+				->where('activity_attri.number = activity.number and activity_attri.sports = 1')
+				->select());
+		$activityCount = $activityCountTotal;
+		$this->assign('page',$page);
+		
+		$activityOffset = $activityCount - $activityMount * $page;
+		if ($activityOffset < 0) {
+			$activityOffset = 0;
+			$activityMount = $activityMount - ($activityMountPerPage * $page - $activityCount);
+		}
+		$activityInfoArray = $activityInfo->limit($activityOffset,$activityMount)
+		->table('activity,activity_attri')
+		->where('activity_attri.number = activity.number and activity_attri.sports = 1')
+		->select();
+		$activityCount = count($activityInfoArray);
+		$this->assign('pageCount', ceil($activityCountTotal/$activityMountPerPage));
+		$this->assign('activityInfoArray',$activityInfoArray);
+		$this->assign('activityMount', $activityMount);
+		$this->display('../Display/Display');
 	}
 
-	public function lecture(){
-		$User = M('activity',null);
-		$list = $User->table('activity,activity_attri')->where('activity_attri.number = activity.number and activity_attri.lecture = 1')->select();
-		$this->assign('list',$list);
-		$this->display('search');
+	public function lecture($page=0){
+		if($page == 0){
+			$this->redirect('/Search/lecture/page/1');
+		}
+		
+		$activityInfo = M('activity');
+		//分页内容
+		//$activityCount = count($activityInfo->select());
+		$activityMountPerPage = 3;
+		$activityMount = $activityMountPerPage;
+		$activityCountTotal = count($activityInfo
+				->table('activity,activity_attri')
+				->where('activity_attri.number = activity.number and activity_attri.lecture = 1')
+				->select());
+		$activityCount = $activityCountTotal;
+		$this->assign('page',$page);
+		
+		$activityOffset = $activityCount - $activityMount * $page;
+		if ($activityOffset < 0) {
+			$activityOffset = 0;
+			$activityMount = $activityMount - ($activityMountPerPage * $page - $activityCount);
+		}
+		$activityInfoArray = $activityInfo->limit($activityOffset,$activityMount)
+		->table('activity,activity_attri')
+		->where('activity_attri.number = activity.number and activity_attri.lecture = 1')
+		->select();
+		$activityCount = count($activityInfoArray);
+		$this->assign('pageCount', ceil($activityCountTotal/$activityMountPerPage));
+		$this->assign('activityInfoArray',$activityInfoArray);
+		$this->assign('activityMount', $activityMount);
+		$this->display('../Display/Display');
 	}
 
-	public function travel(){
-		$User = M('activity',null);
-		$list = $User->table('activity,activity_attri')->where('activity_attri.number = activity.number and activity_attri.travel = 1')->select();
-		$this->assign('list',$list);
-		$this->display('search');
+	public function travel($page=0){
+		if($page == 0){
+			$this->redirect('/Search/travel/page/1');
+		}
+		
+		$activityInfo = M('activity');
+		//分页内容
+		//$activityCount = count($activityInfo->select());
+		$activityMountPerPage = 3;
+		$activityMount = $activityMountPerPage;
+		$activityCountTotal = count($activityInfo
+				->table('activity,activity_attri')
+				->where('activity_attri.number = activity.number and activity_attri.travel = 1')
+				->select());
+		$activityCount = $activityCountTotal;
+		$this->assign('page',$page);
+		
+		$activityOffset = $activityCount - $activityMount * $page;
+		if ($activityOffset < 0) {
+			$activityOffset = 0;
+			$activityMount = $activityMount - ($activityMountPerPage * $page - $activityCount);
+		}
+		$activityInfoArray = $activityInfo->limit($activityOffset,$activityMount)
+		->table('activity,activity_attri')
+		->where('activity_attri.number = activity.number and activity_attri.travel = 1')
+		->select();
+		$activityCount = count($activityInfoArray);
+		$this->assign('pageCount', ceil($activityCountTotal/$activityMountPerPage));
+		$this->assign('activityInfoArray',$activityInfoArray);
+		$this->assign('activityMount', $activityMount);
+		$this->display('../Display/Display');
 	}
 
-	public function party(){
-		$User = M('activity',null);
-		$list = $User->table('activity,activity_attri')->where('activity_attri.number = activity.number and activity_attri.party = 1')->select();
-		$this->assign('list',$list);
-		$this->display('search');
+	public function party($page=0){
+
+		if($page == 0){
+			$this->redirect('/Search/party/page/1');
+		}
+		
+		$activityInfo = M('activity');
+		//分页内容
+		//$activityCount = count($activityInfo->select());
+		$activityMountPerPage = 3;
+		$activityMount = $activityMountPerPage;
+		$activityCountTotal = count($activityInfo
+				->table('activity,activity_attri')
+				->where('activity_attri.number = activity.number and activity_attri.party = 1')
+				->select());
+		$activityCount = $activityCountTotal;
+		$this->assign('page',$page);
+		
+		$activityOffset = $activityCount - $activityMount * $page;
+		if ($activityOffset < 0) {
+			$activityOffset = 0;
+			$activityMount = $activityMount - ($activityMountPerPage * $page - $activityCount);
+		}
+		$activityInfoArray = $activityInfo->limit($activityOffset,$activityMount)
+		->table('activity,activity_attri')
+		->where('activity_attri.number = activity.number and activity_attri.party = 1')
+		->select();
+		$activityCount = count($activityInfoArray);
+		$this->assign('pageCount', ceil($activityCountTotal/$activityMountPerPage));
+		$this->assign('activityInfoArray',$activityInfoArray);
+		$this->assign('activityMount', $activityMount);
+		$this->display('../Display/Display');
 	}
 
-	public function welfare(){
-		$User = M('activity',null);
-		$list = $User->table('activity,activity_attri')->where('activity_attri.number = activity.number and activity_attri.welfare = 1')->select();
-		$this->assign('list',$list);
-		$this->display('search');
+	public function welfare($page=0){
+		if($page == 0){
+			$this->redirect('/Search/welfare/page/1');
+		}
+		
+		$activityInfo = M('activity');
+		//分页内容
+		//$activityCount = count($activityInfo->select());
+		$activityMountPerPage = 3;
+		$activityMount = $activityMountPerPage;
+		$activityCountTotal = count($activityInfo
+				->table('activity,activity_attri')
+				->where('activity_attri.number = activity.number and activity_attri.welfare = 1')
+				->select());
+		$activityCount = $activityCountTotal;
+		$this->assign('page',$page);
+		
+		$activityOffset = $activityCount - $activityMount * $page;
+		if ($activityOffset < 0) {
+			$activityOffset = 0;
+			$activityMount = $activityMount - ($activityMountPerPage * $page - $activityCount);
+		}
+		$activityInfoArray = $activityInfo->limit($activityOffset,$activityMount)
+		->table('activity,activity_attri')
+		->where('activity_attri.number = activity.number and activity_attri.welfare = 1')
+		->select();
+		$activityCount = count($activityInfoArray);
+		$this->assign('pageCount', ceil($activityCountTotal/$activityMountPerPage));
+		$this->assign('activityInfoArray',$activityInfoArray);
+		$this->assign('activityMount', $activityMount);
+		$this->display('../Display/Display');
 	}
 
 	public function photos(){

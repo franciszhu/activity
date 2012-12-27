@@ -21,7 +21,7 @@
     <div class="xkhd_dh_xg_1">
       <div class="xkhd_dh_xg_1_left">
         <ul class="clearfix">
-          <li><a href="/" class="over">首页</a></li>
+          <li><a href="/activity/index.php/Mainpage/listNewActivity" class="over">首页</a></li>
           <li><a href="http://hd.xunkoo.com/activityList/0/0" class="">同城活动</a></li>
           <li><a href="http://hd.xunkoo.com/activityList/0/1" class="">线上活动</a></li>
           <li><a href="http://hd.xunkoo.com/activityList/0/3" class="">福利活动</a></li>
@@ -30,9 +30,9 @@
       </div>
       <div class="xkhd_dh_xg_1_right">
         <div class="xkhd_dh_xg_1_right_1">
-          <form class="key-words-search" action="/" method="get">
-            <input name="" type="text" value="输入活动标题" class="xkhd_dh_xg_1_right_2">
-            <input name="submit" type="submit" value="确认">
+          <form class="key-words-search" action="/activity/index.php/KeySearch/keySearch" method="POST">
+            <input name="key_words" type="text" value="输入活动标题" class="xkhd_dh_xg_1_right_2">
+            <input name="submit" type="submit" value="搜索">
           </form>
         </div>
       </div>

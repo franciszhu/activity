@@ -28,9 +28,9 @@ class MainpageAction extends Action{
 		//echo count($activityInfoArray);
 		//echo $activityInfoArray[2]['act_name'];
 		//echo $activityCount/$activityMount;
-		for ($i=0; $i<count($activityInfoArray);$i++){
+		//for ($i=0; $i<count($activityInfoArray);$i++){
 			$this->assign('activityInfoArray',$activityInfoArray);
-		}
+		//}
 		$this->assign('activityMount', $activityMount);
 		
 		
@@ -94,28 +94,7 @@ class MainpageAction extends Action{
 //                 </div>';
 // 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		$this->display('MainPage');
 		
 // 		if ($pageCount == 1) {
